@@ -51,8 +51,8 @@ def getColour(number):
                 colour = Fore.MAGENTA
         return colour
 while True:
-        # temp = getTemp()
-        temp = 20
+        temp = getTemp()
+        # temp = 20
         percent = temp - lastTemp
         percent = percent/lastTemp
         percent = percent * 100
