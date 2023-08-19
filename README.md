@@ -20,5 +20,5 @@
 <h3 align="left"><u>How to use:</u></h3>
 <p>Copy Main.py onto your raspberry pi and open up a terminal window, navigate to the python file and run "python Main.py"</p>
 <h3 align="left"><u>Modules Used:</u></h3>
-<p>(Modules marked with * are preinstalled)<br>os*<br>colorama<br>subprocess*<br>time*<p>
+<p>(Modules marked with * are preinstalled)<br>os*<br>colorama<br>subprocess*<br>time*<br>requests<p>
 <p>Only tested on the Raspberry Pi 3 B</p>
