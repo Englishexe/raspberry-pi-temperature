@@ -14,6 +14,9 @@
 <a href="https://www.nano-editor.org" target="_blank" rel="noreferrer"> 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Gnu-nano.svg/1024px-Gnu-nano.svg.png" alt="Nano" width="40" height="40"/> 
 </a>
+<a href="https://code.visualstudio.com" target="_blank" rel="noreferrer"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="VisualStudioCode" width="40" height="40"/> 
+</a>
 <h3 align="left"><u>How to use:</u></h3>
 <p>Copy Main.py onto your raspberry pi and open up a terminal window, navigate to the python file and run "python Main.py"</p>
 <h3 align="left"><u>Modules Used:</u></h3>
