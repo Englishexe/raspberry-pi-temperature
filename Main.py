@@ -2,6 +2,7 @@ import os
 from colorama import Fore
 import subprocess
 import time
+import requests
 err = 0
 msg = "0"
 lastTemp = 1
@@ -10,6 +11,20 @@ percent = 0
 counter = 0
 colour = Fore.MAGENTA
 lastColour = Fore.MAGENTA
+globalversion = 0
+localversion = 1.2
+
+try:
+    globalversion = requests.get("https://raw.githubusercontent.com/Englishexe/versions/main/raspberry-pi-temperature")
+    globalversion = float(globalversion.text.strip())
+    if globalversion > localversion:
+        print(f"{Fore.RED}Newer version available.\nStable:{globalversion}\nCurrent:{localversion}\nDownload it here: https://github.com/Englishexe/raspberry-pi-temperature{Fore.RESET}")
+        time.sleep(5)
+    elif globalversion < localversion:
+        print(f"{Fore.YELLOW}You are running a unstable version.\nStable:{globalversion}\nCurrent:{localversion}{Fore.RESET}")
+        time.sleep(5)
+except:
+    print(f"{Fore.RED}Failed to get version number{Fore.RESET}")
 
 print(f"{Fore.LIGHTCYAN_EX}********** {Fore.MAGENTA}Raspberry Pi Temperature App {Fore.LIGHTCYAN_EX}**********{Fore.RESET}")
 print(f"                {Fore.LIGHTCYAN_EX}Made By Englishexe{Fore.RESET}                ")
