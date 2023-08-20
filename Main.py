@@ -12,7 +12,7 @@ counter = 0
 colour = Fore.MAGENTA
 lastColour = Fore.MAGENTA
 globalversion = 0
-localversion = 2
+localversion = 2.0
 
 try:
     globalversion = requests.get("https://raw.githubusercontent.com/Englishexe/versions/main/raspberry-pi-temperature")
